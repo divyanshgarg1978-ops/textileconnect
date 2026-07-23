@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextileConnect | Connect with Verified Indian Textile Manufacturers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-indigo-900">Textile<span class="text-indigo-600">Connect</span></span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-0.5 rounded">INDIA TO THE WORLD</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-indigo-600">Home</a>
+                <a href="#categories" class="hover:text-indigo-600">Categories</a>
+                <a href="#how-it-works" class="hover:text-indigo-600">How It Works</a>
+                <a href="#rfq" class="hover:text-indigo-600">Submit RFQ</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="#rfq" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-indigo-700 transition">List Your Company</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-indigo-900 to-slate-900 text-white py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Connect with Verified Indian Textile Manufacturers</h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">Discover top home-textile, fabric, blanket, and garment exporters in Panipat and across India. Source directly with confidence.</p>
+            
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#categories" class="bg-indigo-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-indigo-500 transition">Browse Categories</a>
+                <a href="#rfq" class="bg-white text-slate-900 font-bold px-8 py-3 rounded-lg hover:bg-slate-100 transition">Request Quotation (RFQ)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-2">Featured Textile Categories</h2>
+        <p class="text-center text-slate-600 mb-10">Building India's trusted textile sourcing network</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center hover:shadow-md transition">
+                <i class="fa-solid fa-bed text-3xl text-indigo-600 mb-3"></i>
+                <h3 class="font-bold">Blankets & Comforters</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center hover:shadow-md transition">
+                <i class="fa-solid fa-[#f0f0f0] fa-rug text-3xl text-indigo-600 mb-3"></i>
+                <h3 class="font-bold">Rugs & Carpets</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center hover:shadow-md transition">
+                <i class="fa-solid fa-[#f0f0f0] fa-scroll text-3xl text-indigo-600 mb-3"></i>
+                <h3 class="font-bold">Fabrics & Yarn</h3>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 text-center hover:shadow-md transition">
+                <i class="fa-solid fa-bag-shopping text-3xl text-indigo-600 mb-3"></i>
+                <h3 class="font-bold">Textile Bags & Packaging</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- RFQ / Contact Form -->
+    <section id="rfq" class="py-16 bg-slate-100 px-4">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-2xl font-bold text-center mb-2">Submit a Request for Quotation (RFQ)</h2>
+            <p class="text-center text-slate-600 text-sm mb-6">Tell us what product you need, and we'll connect you directly with local manufacturers.</p>
+            
+            <form class="space-y-4" onsubmit="alert('Thank you! Your inquiry has been sent to TextileConnect.'); return false;">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Your Name / Company Name</label>
+                    <input type="text" required class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="e.g. John Doe Imports">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Email / WhatsApp Number</label>
+                    <input type="text" required class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="+123 456 7890 / name@company.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Textile Product Needed</label>
+                    <textarea required rows="3" class="w-full border border-slate-300 p-3 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="Specify product type, quantity (MOQ), and specs..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-700 transition">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; 2026 TextileConnect. Connecting Indian Textile Exporters with Global Buyers.</p>
+    </footer>
+
+</body>
+</html>
